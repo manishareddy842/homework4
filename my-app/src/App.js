@@ -21,7 +21,7 @@ Wind:response.data.main.wind,
   function handleSubmit(event){
     event.preventDefault(event);  
     let apiKey = "baadcc7cb0f909afea4b1c312e4ab46e";
-  let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&unit=metrics`
+  let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&unit=metric`
   axios.get(apiUrl).then(displayTemp)
   console.log(apiUrl)
   
